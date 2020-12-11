@@ -25,9 +25,53 @@
             <a href="#"><img class="header_search" src="img/search.svg" alt="search"></a>
         </div>
 
-        <div class="heder_right">
-            <a href="#"><img src="img/menu.svg" alt="menu"></a>
+        <div class="header_right">
+            <a href="catalog.html">
+                <img src="img/menu.svg" alt="menu">
+            </a>
+            <!-- <details class="menu_open" open>
+                <summary class="menu_heading">
+                    MENU
+                    <img class="menu_close" src="img/close.svg" alt="">
+                </summary>
+                <ul>
+                    <li>
+                        <a href="#">MAN</a>
+                        <ul>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Denim</a></li>
+                            <li><a href="#">T-Shirts</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">WOMAN</a>
+                        <ul>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Jackets & Coats</a></li>
+                            <li><a href="#">Polos</a></li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Shirts</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">KIDS</a>
+                        <ul>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Jackets & Coats</a></li>
+                            <li><a href="#">Polos</a></li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Bags</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </details> -->
+
             <a href="#"><img class="header_account" src="img/account.svg" alt="menu"></a>
+
             <a href="#"><img src="img/cart.svg" alt="menu"></a>
         </div>
     </header>
@@ -35,73 +79,91 @@
     <nav class="catalog_top center">
         <h2 class="catalog_top-heading">NEW ARRIVALS</h2>
         <p class="catalog_top-text">
-            <a class="link-brown" href="">HOME</a> / <a class="link-brown" href="">MEN</a> / <a class="link-pink"
-                href="">NEW ARRIVALS</a>
+            <a class="link-brown" href="#">HOME</a> / <a class="link-brown" href="#">MEN</a> / <a class="link-pink"
+                href="#">NEW ARRIVALS</a>
         </p>
     </nav>
 
-    <section class="goods center catalog_goods">
-        <div class="goods_filter">
-            <div class="filter">
-                <a href="#">
-                    <div class="filter_content">
-                        <p class="filter_text">FILTER</p>
-                        <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="filter_img"
-                                d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
-                                fill="black" />
-                        </svg>
-                    </div>
-                </a>
+    <div class="goods_filter center">
+        <div class="filter filter_open">
+            <span class="filter_text">
+                FILTER
+                <svg class="filter_img" width="15" height="10" viewBox="0 0 15 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="filter_img"
+                        d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                        fill="black" />
+                </svg>
+            </span>
 
-                <nav class="filter_open">
-                    <ul>
-                        <li>
-                            <a href="#">CATEGORY</a>
-                            <ul>
-                                <li><a href="#">Accessories</a></li>
-                                <li><a href="#">Bags</a></li>
-                                <li><a href="#">Denim</a></li>
-                                <li><a href="#">Hoodies & Sweatshirts</a></li>
-                                <li><a href="#">Jackets & Coats</a></li>
-                                <li><a href="#">Polos</a></li>
-                                <li><a href="#">Shirts</a></li>
-                                <li><a href="#">Shoes</a></li>
-                                <li><a href="#">Sweaters & Knits</a></li>
-                                <li><a href="#">T-Shirts</a></li>
-                                <li><a href="#">Tanks</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">BRAND</a></li>
-                        <li><a href="#">DESIGNER</a></li>
+            <div class="filter_items">
+                <details class="item_pink" open>
+                    <summary class="filter_item">CATEGORY</summary>
+                    <ul class="item_list">
+                        <li><a class="list_point" href="#">Accessories</a></li>
+                        <li><a class="list_point" href="#">Bags</a></li>
+                        <li><a class="list_point" href="#">Denim</a></li>
+                        <li><a class="list_point" href="#">Hoodies & Sweatshirts</a></li>
+                        <li><a class="list_point" href="#">Jackets & Coats</a></li>
+                        <li><a class="list_point" href="#">Polos</a></li>
+                        <li><a class="list_point" href="#">Shirts</a></li>
+                        <li><a class="list_point" href="#">Shoes</a></li>
+                        <li><a class="list_point" href="#">Sweaters & Knits</a></li>
+                        <li><a class="list_point" href="#">T-Shirts</a></li>
+                        <li><a class="list_point" href="#">Tanks</a></li>
                     </ul>
-                </nav>
-            </div>
+                </details>
 
-            <div class="filter_choise">
-                <a class="choise_link" href="#">
-                    <div class="choise">
-                        <p>TRENDING NOW</p>
-                        <img class="choise_arrow" src="img/filter_arrow.svg" alt="arrow">
-                    </div>
-                </a>
+                <details class="item_pink">
+                    <summary class="filter_item">BRAND</summary>
+                </details>
 
-                <a class="choise_link" href="#">
-                    <div class="choise">
-                        <p>SIZE</p>
-                        <img class="choise_arrow" src="img/filter_arrow.svg" alt="arrow">
-                    </div>
-                </a>
-
-                <a class="choise_link" href="#">
-                    <div class="choise">
-                        <p>PRICE</p>
-                        <img class="choise_arrow" src="img/filter_arrow.svg" alt="arrow">
-                    </div>
-                </a>
+                <details class="item_pink">
+                    <summary class="filter_item">DESIGNER</summary>
+                </details>
             </div>
         </div>
 
+        <div class="filter_choice">
+            <div class="choice">
+                <details>
+                    <summary>
+                        TRENDING NOW
+                        <img class="choice_arrow" src="img/filter_arrow.svg" alt="arrow">
+                    </summary>
+                </details>
+            </div>
+
+            <div class="choice">
+                <details class="choice_open">
+                    <summary>
+                        SIZE
+                        <img class="choice_arrow" src="img/filter_arrow.svg" alt="arrow">
+                    </summary>
+                    <div class="choice_size">
+                        <label><input class="size" type="checkbox" name="" id="">XS</label>
+
+                        <label><input class="size" type="checkbox" name="" id="">S</label>
+
+                        <label><input class="size" type="checkbox" name="" id="">M</label>
+
+                        <label><input class="size" type="checkbox" name="" id="">L</label>
+                    </div>
+                </details>
+            </div>
+
+            <div class="choice">
+                <details>
+                    <summary>
+                        PRICE
+                        <img class="choice_arrow" src="img/filter_arrow.svg" alt="arrow">
+                    </summary>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <section class="goods center catalog_goods">
         <div class="goods_items">
             <div class="item item-mb">
                 <a href="#"><img class="item_img" src="img/goods_item-1.jpg" alt="item"></a>
