@@ -12,6 +12,19 @@
         display: flex
         width: 652px
         height: 306px
+        position: relative
+
+        &::after
+            content: ''
+            background-image: url("../img/close.svg")
+            background-repeat: no-repeat
+            width: 18px
+            height: 18px
+            display: block
+            position: absolute
+            cursor: pointer
+            top: 28px
+            right: 22px
 
     &-item_img
         width: 262px
@@ -52,7 +65,7 @@
     &_input::-webkit-outer-spin-button,
 
     &_input::-webkit-inner-spin-button
-        -webkit-appearance: none; /*отключает стрелочки*/
+        -webkit-appearance: none /*отключает стрелочки*/
 
 .cart_buttons
     margin-top: 72px
@@ -180,4 +193,4 @@
     display: block
 
     &:hover
-        background-color: #E05C6E
+        background-color: $colorSelect - #111

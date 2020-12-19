@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -349,7 +348,7 @@ details summary::-webkit-details-marker {
 }
 
 .footer_top {
-  background-image: url("img/footer_back.png");
+  background-image: url("../img/footer_back.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -543,11 +542,11 @@ details summary::-webkit-details-marker {
 }
 
 .filter:hover .filter_text {
-  color: #EF5B70;
+  color: #F16D7F;
 }
 
 .filter:hover .filter_img {
-  fill: #EF5B70;
+  fill: #F16D7F;
 }
 
 .filter_open:hover {
@@ -588,14 +587,14 @@ details summary::-webkit-details-marker {
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
-  border-left: 5px solid #EF5B70;
+  border-left: 5px solid #F16D7F;
   border-bottom: 1px solid #EBEBEB;
   padding: 11px;
   margin-top: 16px;
 }
 
-.item_pink:hover_item .filter {
-  color: #EF5B70;
+.item_pink:hover .filter_item {
+  color: #F16D7F;
 }
 
 .item_list {
@@ -614,7 +613,7 @@ details summary::-webkit-details-marker {
 }
 
 .list_point:hover {
-  color: #EF5B70;
+  color: #F16D7F;
 }
 
 .filter_choice {
@@ -703,7 +702,7 @@ details summary::-webkit-details-marker {
 }
 
 .page_1 {
-  color: #EF5B70;
+  color: #F16D7F;
   margin-left: 18px;
 }
 
@@ -768,7 +767,7 @@ details summary::-webkit-details-marker {
 }
 
 .border {
-  background-color: #EF5B70;
+  background-color: #F16D7F;
   width: 63px;
   height: 3px;
   display: inline-block;
@@ -796,7 +795,7 @@ details summary::-webkit-details-marker {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  color: #EF5B70;
+  color: #F16D7F;
   margin-bottom: 65px;
 }
 
@@ -831,7 +830,7 @@ details summary::-webkit-details-marker {
 }
 
 .add_button {
-  border: 1px solid #FF6A6A;
+  border: 1px solid #F16D7F;
   padding: 14px 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -839,7 +838,7 @@ details summary::-webkit-details-marker {
 }
 
 .add_button:hover {
-  background-color: #F26376;
+  background-color: #e05c6e;
 }
 
 .add_button:hover .button_text {
@@ -853,7 +852,7 @@ details summary::-webkit-details-marker {
 .button_text {
   font-size: 16px;
   line-height: 19px;
-  color: #F26376;
+  color: #F16D7F;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -889,6 +888,20 @@ details summary::-webkit-details-marker {
   display: flex;
   width: 652px;
   height: 306px;
+  position: relative;
+}
+
+.cart_item::after {
+  content: '';
+  background-image: url("../img/close.svg");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  top: 28px;
+  right: 22px;
 }
 
 .cart-item_img {
@@ -938,7 +951,6 @@ details summary::-webkit-details-marker {
 
 .quantity_input::-webkit-outer-spin-button, .quantity_input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  /*отключает стрелочки*/
 }
 
 .cart_buttons {
@@ -1097,6 +1109,122 @@ details summary::-webkit-details-marker {
 }
 
 .total_button:hover {
-  background-color: #E05C6E;
+  background-color: #e05c6e;
+}
+
+/*Registration*/
+.registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+
+.registration_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 360px;
+  margin-right: 128px;
+}
+
+.registration_label {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.registration_input {
+  border: 1px solid #A4A4A4;
+  padding: 13px 17px;
+}
+
+.registration_input::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration_input::-moz-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration_input:-moz-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration_input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration_check {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 32px;
+  margin-bottom: 33px;
+}
+
+.registration_text {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-top: 15px;
+  margin-bottom: 39px;
+}
+
+.registration_button {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  border: none;
+  background-color: #F16D7F;
+  padding: 16px 29px;
+  width: 169px;
+}
+
+.registration_button img {
+  margin-left: 20px;
+}
+
+.registration_button:hover {
+  background-color: #e05c6e;
+}
+
+.input_mb {
+  margin-bottom: 20px;
+}
+
+.check_ml {
+  margin-left: 10px;
+}
+
+.check_mr {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=style.css.map */
