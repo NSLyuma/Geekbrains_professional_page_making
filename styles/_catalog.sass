@@ -1,0 +1,166 @@
+.catalog_top
+    background-color: #F8F3F4
+    height: 148px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &-heading
+        font-size: 24px
+        line-height: 29px
+        color: $colorSelect
+        font-weight: 400
+
+    &-text
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+        font-weight: 300
+
+.link-brown
+    color: #636363
+    font-weight: 300
+    transition: color .2s
+
+    &:hover
+        color: $colorSelect
+
+.link-pink
+    color: $colorSelect
+    font-weight: 600
+
+.goods_filter
+    display: flex
+    padding-top: 39px
+    padding-bottom: 65px
+    position: relative
+
+.filter
+    position: absolute
+    padding-top: 16px
+    padding-left: 16px
+
+    &:hover .filter_text
+        color: $colorSelect
+
+    &:hover .filter_img
+        fill: $colorSelect
+
+    &_open:hover
+        width: 360px
+        background-color: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        padding: 16px
+        position: absolute
+        z-index: 1
+
+    &_open:hover .filter_items
+        display: block
+
+    &_text, .choice
+        font-size: 14px
+        line-height: 17px
+
+    &_text
+        font-weight: 600
+        color: #000000
+        cursor: pointer
+
+    &_img
+        margin-left: 11px
+
+    &_items
+        display: none
+        cursor: pointer
+
+    &_item
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        border-left: 5px solid $colorSelect
+        border-bottom: 1px solid #EBEBEB
+        padding: 11px
+        margin-top: 16px
+
+.item_pink:hover .filter_item
+    color: $colorSelect
+
+.item_list
+    margin-top: 24px
+    margin-bottom: 24px
+
+    & li
+        margin: 0 0 11px 18px
+
+.list_point
+    font-size: 14px
+    line-height: 17px
+    color: #6F6E6E
+
+    &:hover
+        color: $colorSelect
+
+.filter_choice
+    display: flex
+    margin-left: calc(33.333% + 15px)
+    flex-grow: 2
+    flex-basis: 66.666%
+    padding-top: 16px
+
+.choice
+    color: #6F6E6E
+    display: flex
+    margin-right: 28px
+    cursor: pointer
+
+    &_open
+        position: relative
+
+    &_arrow
+        margin-left: 10px
+        transition: transform 1s
+
+        &:hover
+            transform: rotate(360deg)
+
+    &_size
+        background-color: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        padding: 8px
+        display: flex
+        flex-direction: column
+        position: absolute
+        z-index: 1
+        width: 79px
+        top: 24px
+        left: -10px
+
+.size
+    font-size: 14px
+    line-height: 16px
+    color: #6F6E6E
+    margin-right: 10px
+
+.catalog_goods
+    padding-bottom: 96px
+    padding-top: 0
+
+.pages
+    border: 1px solid #EBEBEB
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 283px
+    height: 43px
+    margin: 48px auto 0
+
+.page_number
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: #cccccc
+    margin-right: 18px
+
+.page_1
+    color: $colorSelect
+    margin-left: 18px
