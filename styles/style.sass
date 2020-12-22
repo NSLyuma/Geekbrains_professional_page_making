@@ -95,35 +95,27 @@ details summary::-webkit-details-marker
     &_text
         position: absolute
         text-align: center
-        top: 105px
+        top: 40%
+        left: 35%
 
-    &_text-left-1
-        left: 103px
+        &-white
+            color: #fff
+            font-size: 16px
+            line-height: 19px
+            font-weight: 400
 
-    &_text-left-2
-        left: 125px
-
-    &_text-left-3
-        left: 123px
-
-    &_text-white
-        color: #fff
-        font-size: 16px
-        line-height: 19px
-        font-weight: 400
-
-    &_text-pink
-        color: $colorSelect
-        font-size: 22px
-        font-weight: 600
+        &-pink
+            color: $colorSelect
+            font-size: 22px
+            font-weight: 600
 
     &_card_bottom
         position: relative
 
     &_text_bottom
         position: absolute
-        top: 65px
-        left: 490px
+        top: 40%
+        left: 43%
         text-align: center
 
 .goods
@@ -156,12 +148,14 @@ details summary::-webkit-details-marker
 
     &:hover .item_img
         filter: brightness(40%)
+        transform: scale(1.05)
 
     &:hover .item_add
         display: flex
 
     &_img
         width: 100%
+        transition: filter .5s, transform .5s
 
     &_add
         position: absolute
@@ -175,6 +169,7 @@ details summary::-webkit-details-marker
         line-height: 17px
         align-items: center
         justify-content: center
+        transition: box-shadow .3s
 
         &:hover
             box-shadow: 0 0 5px #fff
@@ -215,6 +210,7 @@ details summary::-webkit-details-marker
     border: 1px solid $colorSelect
     padding: 14px 38px
     margin-top: 48px
+    transition: background-color .3s, color .3s
 
     &:hover
         background-color: $colorSelect
@@ -309,6 +305,7 @@ details summary::-webkit-details-marker
     border-top-right-radius: 50px
     border-bottom-right-radius: 50px
     left: 233px
+    transition: background-color .3s
 
     &:hover
         background-color: $colorSelect - #111
@@ -340,12 +337,189 @@ details summary::-webkit-details-marker
     height: 32px
     display: flex
     justify-content: center
+    transition: background-color .5s
 
     &:hover
         background-color: $colorSelect
 
     &_img
         align-self: center
+
+        & path
+            transition: fill .3s
+
+@media (max-width: 1025px)
+    .header, .offer, .footer_top, .footer_bottom
+        padding-left: 32px
+        padding-right: 32px
+
+    .offer_text
+        left: 30%
+
+    .goods
+        padding-top: 155px
+
+        &_items
+            justify-content: center
+
+    .item-mb-1024
+        margin-bottom: 30px
+
+    .item-mr
+        margin-right: 30px
+
+@media (max-width: 768px)
+    .offer
+        padding-top: 20px
+
+        &_group
+            margin-bottom: 20px
+
+        &_card:not(:last-child)
+            margin-right: 20px
+
+        &_text_bottom
+            top: 30%
+            left: 38%
+
+    .text_left-1
+        left: 20%
+
+    .text_left-3
+        left: 25%
+
+    .goods
+        padding-bottom: 65px
+
+        &_text
+            margin-bottom: 73px
+
+        &_button
+            margin-top: 33px
+
+    .item-mb, .item-mb-1024
+        margin-bottom: 16px
+
+    .item-mr
+        margin-right: 16px
+
+    .advantages
+        padding-top: 48px
+        padding-bottom: 64px
+
+        &_points
+            flex-direction: column
+            margin: 0 auto
+
+    .point:not(:last-child)
+        margin-bottom: 48px
+
+    .footer_top
+        flex-direction: column
+        padding-top: 64px
+        padding-bottom: 140px
+        height: auto
+
+        &-text
+            margin-bottom: 60px
+
+    .subscribe_form
+        margin-top: 27px
+
+@media (max-width: 426px)
+    .center
+        padding-left: 8px
+        padding-right: 8px
+
+    .header
+        padding-right: 16px
+        padding-left: 16px
+    .hidden
+        display: none
+
+    .top
+        &_right
+            padding-top: 148px
+            padding-bottom: 148px
+
+        &_content
+            margin: 0 auto
+
+        &_heading
+            font-size: 38px
+            line-height: 46px
+
+        &_text
+            font-size: 20px
+
+    .offer
+        padding-top: 64px
+        margin-left: 8px
+        margin-right: 8px
+
+        &_group
+            flex-direction: column
+            margin-bottom: 0
+
+        &_card
+            margin-bottom: 32px
+
+        &_card:not(:last-child)
+            margin-right: 0
+
+        &_card_bottom
+            height: 111px
+            background-image: url("../img/offer_card_bottom.png")
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+
+        &_text_bottom
+            left: 28%
+
+    .text_left-1
+        left: 32%
+
+    .text_left-2
+        left: 37%
+
+    .text_left-3
+        left: 34%
+
+    .goods
+        padding-top: 64px
+        padding-bottom: 96px
+
+        &_text
+            margin-bottom: 64px
+
+        &_button
+            margin-top: 41px
+
+    .item-mr
+        margin-right: 0
+
+    .item-mb-mini
+        margin-bottom: 16px
+
+    .advantages
+        padding-bottom: 81px
+
+    .footer_top
+        background-position-x: -460px
+        padding-bottom: 110px
+
+    .subscribe_form
+        margin-top: 22px
+
+    .footer_bottom
+        flex-direction: column-reverse
+        height: auto
+        padding-top: 43px
+        padding-bottom: 9px
+
+    .footer_social
+        margin-bottom: 40px
 
 /*Catalog*/
 @import _catalog.sass

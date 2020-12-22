@@ -37,19 +37,23 @@
     </nav>
 
     <div class="registration center">
-        <form class="registration_form" action="">
+        <form class="registration_form" action="#">
             <label class="registration_label" for="name">Your Name</label>
-            <input class="registration_input input_mb" type="text" name="name" id="name" placeholder="First Name">
+            <input class="registration_input input_mb" required type="text" name="name" id="name"
+                placeholder="First Name">
             <input class="registration_input" type="text" name="last-name" id="last-name" placeholder="Last Name">
 
             <div class="registration_check">
-                <input type="radio" name="sex" id="sex"><span class="check_ml check_mr">Male</span>
-                <input type="radio" name="sex" id="sex"><span class="check_ml">Female</span>
+                <input type="radio" checked name="sex" id="male"><label class="check_ml check_mr"
+                    for="male">Male</label>
+                <input type="radio" name="sex" id="female"><label class="check_ml" for="female">Female</label>
             </div>
 
             <label class="registration_label" for="email">Login details</label>
-            <input class="registration_input input_mb" type="email" name="email" id="email" placeholder="Email">
-            <input class="registration_input" type="password" name="password" id="password" placeholder="Password">
+            <input class="registration_input input_mb" required type="email" name="email" id="email"
+                placeholder="Email">
+            <input class="registration_input" required type="password" name="password" id="password"
+                placeholder="Password">
             <p class="registration_text">Please use 8 or more characters, with at least 1 number and a mixture of
                 uppercase and lowercase letters
             </p>
@@ -63,11 +67,11 @@
                 Starting with these as
                 soon as you join:</p>
             <ul class="loyalty_list">
-                <li>15% off welcome offer</li>
-                <li>Free shipping, returns and exchanges on all orders</li>
-                <li>$10 off a purchase on your birthday</li>
-                <li>Early access to products</li>
-                <li>Exclusive offers & rewards</li>
+                <li class="loyalty_point">15% off welcome offer</li>
+                <li class="loyalty_point">Free shipping, returns and exchanges on all orders</li>
+                <li class="loyalty_point">$10 off a purchase on your birthday</li>
+                <li class="loyalty_point">Early access to products</li>
+                <li class="loyalty_point">Exclusive offers & rewards</li>
             </ul>
         </section>
     </div>
@@ -85,9 +89,9 @@
                 <h3 class="subscribe_heading">SUBSCRIBE</h3>
                 <p class="subscribe_text">FOR OUR NEWLETTER AND PROMOTION</p>
 
-                <form class="subscribe_form" action="">
+                <form class="subscribe_form" action="#">
                     <input class="subscribe_input" type="email" placeholder="Enter Your Email">
-                    <a class="subscribe_button" href="">Subscribe</a>
+                    <a class="subscribe_button" href="registration.html">Subscribe</a>
                 </form>
             </div>
         </div>
@@ -96,7 +100,7 @@
             <p class="footer_copy">&copy; 2021 Brand All Rights Reserved.</p>
 
             <div class="footer_social">
-                <a class="social_link" href="">
+                <a class="social_link" href="#">
                     <div class="social">
                         <svg class="social_img" width="9" height="15" viewBox="0 0 9 15" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +111,7 @@
                     </div>
                 </a>
 
-                <a class="social_link" href="">
+                <a class="social_link" href="#">
                     <div class="social">
                         <svg class="social_img" width="16" height="15" viewBox="0 0 16 15" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -118,7 +122,7 @@
                     </div>
                 </a>
 
-                <a class="social_link" href="">
+                <a class="social_link" href="#">
                     <div class="social">
                         <svg class="social_img" width="13" height="16" viewBox="0 0 13 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -129,7 +133,7 @@
                     </div>
                 </a>
 
-                <a class="social_link" href="">
+                <a class="social_link" href="#">
                     <div class="social">
                         <svg class="social_img" width="17" height="14" viewBox="0 0 17 14" fill="none"
                             xmlns="http://www.w3.org/2000/svg">

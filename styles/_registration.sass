@@ -70,12 +70,13 @@
         background-color: $colorSelect
         padding: 16px 29px
         width: 169px
-
-        & img
-            margin-left: 20px
+        transition: background-color .3s
 
         &:hover
             background-color: $colorSelect - #111
+
+        & img
+            margin-left: 20px
 
 .input_mb
     margin-bottom: 20px
@@ -86,8 +87,39 @@
 .check_mr
     margin-right: 20px
 
-.loyalty_heading
-    font-weight: 300
-    font-size: 24px
-    line-height: 29px
-    color: #000000
+.loyalty
+
+    &_heading
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        color: #000000
+        margin-bottom: 22px
+
+    &_text
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        color: #000000
+        width: 652px
+        margin-bottom: 21px
+
+    &_point
+        font-size: 24px
+        line-height: 29px
+        color: #000000
+        font-weight: 300
+        margin-bottom: 16px
+        margin-left: 43px
+        position: relative
+
+        &::before
+            content: ''
+            background-image: url("../img/tick.svg")
+            background-repeat: no-repeat
+            width: 20px
+            height: 16px
+            display: block
+            position: absolute
+            top: 6px
+            left: -43px

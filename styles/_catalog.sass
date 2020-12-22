@@ -20,6 +20,7 @@
 .link-brown
     color: #636363
     font-weight: 300
+    transition: color .2s
 
     &:hover
         color: $colorSelect
@@ -117,6 +118,10 @@
 
     &_arrow
         margin-left: 10px
+        transition: transform 1s
+
+        &:hover
+            transform: rotate(360deg)
 
     &_size
         background-color: #FFFFFF
