@@ -1,0 +1,604 @@
+@import _vars.sass
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: "Lato", sans-serif
+
+ul
+    list-style-type: none
+
+a
+    text-decoration: none
+
+summary, input, button
+    outline: none
+
+details summary::-webkit-details-marker
+    display: none
+
+.center
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
+
+.header
+    background-color: #222
+    display: flex
+    align-items: center
+    height: 75px
+    justify-content: space-between
+    position: relative
+
+    &_search
+        margin-left: 41px
+
+    &_right
+        display: flex
+        align-items: center
+
+    &_account
+        margin: 0 34px
+
+#switcher
+    position: absolute
+    visibility: hidden
+
+    &:checked ~ .drop
+        opacity: 1
+
+.drop
+    background-color: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 37px 32px
+    position: absolute
+    top: 75px
+    right: 0
+    opacity: 0
+    width: $widthMenu
+    height: 765px
+    transition: all .3s
+    z-index: 1
+
+    &__img
+        position: absolute
+        top: 16px
+        right: 16px
+        cursor: pointer
+
+    &__name
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        font-weight: 600
+        margin-bottom: 24px
+
+    &__box
+
+        &:not(:last-child)
+            margin-bottom: 20px
+
+        & ul li:not(:last-child)
+            margin-bottom: 11px
+
+    &__heading
+        font-size: 14px
+        line-height: 17px
+        color: $colorSelect
+        margin-bottom: 12px
+
+    &_link
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        margin-left: 22px
+        transition: color .2s
+
+        &:hover
+            color: $colorSelect
+
+.top
+    display: flex
+
+    &_left
+        background-color: rgba(113, 103, 105, 0.08)
+        flex-grow: 1
+        width: 100%
+        display: flex
+        justify-content: flex-end
+
+    &_img
+        display: block
+        max-width: 100%
+
+    &_right
+        background-color: #F1E4E6
+        width: 100%
+        display: flex
+
+    &_content
+        color: #222222
+        border-left: 12px solid $colorSelect
+        padding-left: 16px
+        margin-left: 64px
+        align-self: center
+
+    &_heading
+        font-size: 48px
+        line-height: 58px
+        font-weight: 800
+
+    &_text
+        font-size: 32px
+        font-weight: 600
+
+    &_text span
+        color: $colorSelect
+
+.offer
+    padding-top: 63px
+
+    &_group
+        display: flex
+        justify-content: space-between
+        margin-bottom: 30px
+
+    &_card
+        position: relative
+
+    &_card:not(:last-child)
+        margin-right: 30px
+
+    &_img
+        width: 100%
+
+    &_text
+        position: absolute
+        text-align: center
+        top: 40%
+        left: 35%
+
+        &-white
+            color: #fff
+            font-size: 16px
+            line-height: 19px
+            font-weight: 400
+
+        &-pink
+            color: $colorSelect
+            font-size: 22px
+            font-weight: 600
+
+    &_card_bottom
+        position: relative
+
+    &_text_bottom
+        position: absolute
+        top: 40%
+        left: 43%
+        text-align: center
+
+.goods
+    padding-top: 97px
+    text-align: center
+    padding-bottom: 95px
+
+    &_heading
+        font-size: 30px
+        line-height: 36px
+        color: #222222
+        font-weight: 500
+        margin-bottom: 6px
+
+    &_text
+        font-size: 14px
+        line-height: 17px
+        color: #9F9F9F
+        margin-bottom: 48px
+
+    &_items
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+.item
+    background-color: #F8F8F8
+    width: 360px
+    position: relative
+
+    &:hover .item_img
+        filter: brightness(40%)
+        transform: scale(1.05)
+
+    &:hover .item_add
+        display: flex
+
+    &_img
+        width: 100%
+        transition: filter .5s, transform .5s
+
+    &_add
+        position: absolute
+        top: 188px
+        left: 111px
+        color: #fff
+        display: none
+        border: 1px solid #fff
+        padding: 10px 13px
+        font-size: 14px
+        line-height: 17px
+        align-items: center
+        justify-content: center
+        transition: box-shadow .3s
+
+        &:hover
+            box-shadow: 0 0 5px #fff
+
+    &_add img
+        margin-right: 11px
+
+    &_description
+        text-align: left
+        padding: 24px 18px 20px
+
+    &_heading
+        font-size: 13px
+        line-height: 16px
+        color: #000
+        margin-bottom: 13px
+
+    &_text
+        font-size: 14px
+        line-height: 17px
+        color: #5D5D5D
+        margin-bottom: 18px
+        font-weight: 300
+
+    &_price
+        font-size: 16px
+        line-height: 19px
+        color: $colorSelect
+
+    &-mb
+        margin-bottom: 30px
+
+.goods_button
+    display: inline-block
+    font-size: 16px
+    line-height: 19px
+    color: $colorSelect
+    border: 1px solid $colorSelect
+    padding: 14px 38px
+    margin-top: 48px
+    transition: background-color .3s, color .3s
+
+    &:hover
+        background-color: $colorSelect
+        color: #fff
+
+.advantages
+    background-color: #222224
+    display: flex
+    padding-top: 103px
+    padding-bottom: 104px
+
+    &_points
+        display: flex
+        justify-content: space-between
+
+.point
+    max-width: 360px
+    text-align: center
+
+    &_img
+        margin-bottom: 28px
+
+    &_heading, .point_text
+        color: #FBFBFB
+
+    &_heading
+        font-size: 20px
+        line-height: 24px
+        font-weight: 400
+        margin-bottom: 16px
+
+    &_text
+        font-size: 14px
+        line-height: 17px
+        font-weight: 300
+
+.footer_top
+    background-image: url("../img/footer_back.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 97px
+    height: 448px
+
+    &-right
+        text-align: center
+        max-width: 360px
+
+.footer_img
+    margin-bottom: 30px
+
+.footer_top-text
+    font-size: 20px
+    line-height: 24px
+    color: #222224
+
+.footer_top-left
+    text-align: center
+
+.subscribe_heading
+    font-size: 24px
+    line-height: 40px
+    color: #222224
+
+.subscribe_text
+    font-weight: 500
+    font-size: 17px
+
+.subscribe_form
+    margin-top: 32px
+    position: relative
+
+.subscribe_input, .subscribe_button
+    font-size: 14px
+    line-height: 17px
+
+.subscribe_input
+    background-color: #E1E1E1
+    border: none
+    border-radius: 50px
+    padding: 15px 117px 15px 22px
+    width: 328px
+
+.subscribe_button
+    position: absolute
+    color: #fff
+    background-color: $colorSelect
+    padding: 15px 17px
+    border-top-right-radius: 50px
+    border-bottom-right-radius: 50px
+    left: 233px
+    transition: background-color .3s
+
+    &:hover
+        background-color: $colorSelect - #111
+
+.footer_bottom
+    background-color: #222224
+    height: 79px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.footer_copy
+    font-size: 16px
+    line-height: 19px
+    color: #FBFBFB
+
+.footer_social
+    display: flex
+
+.social_link:not(:last-child)
+    margin-right: 7px
+
+.social_link:hover .social_img path
+    fill: #fff
+
+.social
+    background-color: #fff
+    width: 32px
+    height: 32px
+    display: flex
+    justify-content: center
+    transition: background-color .5s
+
+    &:hover
+        background-color: $colorSelect
+
+    &_img
+        align-self: center
+
+        & path
+            transition: fill .3s
+
+@media (max-width: 1441px)
+    .drop
+        height: auto
+
+@media (max-width: 1025px)
+    .header, .offer, .footer_top, .footer_bottom
+        padding-left: 32px
+        padding-right: 32px
+
+    .offer_text
+        left: 30%
+
+    .goods
+        padding-top: 155px
+
+        &_items
+            justify-content: center
+
+    .item-mb-1024
+        margin-bottom: 30px
+
+    .item-mr
+        margin-right: 30px
+
+@media (max-width: 769px)
+    .offer
+        padding-top: 20px
+
+        &_group
+            margin-bottom: 20px
+
+        &_card:not(:last-child)
+            margin-right: 20px
+
+        &_text_bottom
+            top: 30%
+            left: 38%
+
+    .text_left-1
+        left: 20%
+
+    .text_left-3
+        left: 25%
+
+    .goods
+        padding-bottom: 65px
+
+        &_text
+            margin-bottom: 73px
+
+        &_button
+            margin-top: 33px
+
+    .item-mb, .item-mb-1024
+        margin-bottom: 16px
+
+    .item-mr
+        margin-right: 16px
+
+    .advantages
+        padding-top: 48px
+        padding-bottom: 64px
+
+        &_points
+            flex-direction: column
+            margin: 0 auto
+
+    .point:not(:last-child)
+        margin-bottom: 48px
+
+    .footer_top
+        flex-direction: column
+        padding-top: 64px
+        padding-bottom: 140px
+        height: auto
+
+        &-text
+            margin-bottom: 60px
+
+    .subscribe_form
+        margin-top: 27px
+
+@media (max-width: 426px)
+    .center
+        padding-left: 8px
+        padding-right: 8px
+
+    .header
+        padding-right: 16px
+        padding-left: 16px
+
+    .drop
+        width: 100%
+
+    .hidden
+        display: none
+
+    .top
+        &_right
+            padding-top: 148px
+            padding-bottom: 148px
+
+        &_content
+            margin: 0 auto
+
+        &_heading
+            font-size: 38px
+            line-height: 46px
+
+        &_text
+            font-size: 20px
+
+    .offer
+        padding-top: 64px
+        margin-left: 8px
+        margin-right: 8px
+
+        &_group
+            flex-direction: column
+            margin-bottom: 0
+
+        &_card
+            margin-bottom: 32px
+
+        &_card:not(:last-child)
+            margin-right: 0
+
+        &_card_bottom
+            height: 111px
+            background-image: url("../img/offer_card_bottom.png")
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+
+        &_text_bottom
+            left: 28%
+
+    .text_left-1
+        left: 32%
+
+    .text_left-2
+        left: 37%
+
+    .text_left-3
+        left: 34%
+
+    .goods
+        padding-top: 64px
+        padding-bottom: 96px
+
+        &_text
+            margin-bottom: 64px
+
+        &_button
+            margin-top: 41px
+
+    .item-mr
+        margin-right: 0
+
+    .item-mb-mini
+        margin-bottom: 16px
+
+    .advantages
+        padding-bottom: 81px
+
+    .footer_top
+        background-position-x: -460px
+        padding-bottom: 110px
+
+    .subscribe_form
+        margin-top: 22px
+
+    .footer_bottom
+        flex-direction: column-reverse
+        height: auto
+        padding-top: 43px
+        padding-bottom: 9px
+
+    .footer_social
+        margin-bottom: 40px
+
+/*Catalog*/
+@import _catalog.sass
+
+/*Product*/
+@import _product.sass
+
+/*Cart*/
+@import _cart.sass
+
+/*Registration*/
+@import _registration.sass

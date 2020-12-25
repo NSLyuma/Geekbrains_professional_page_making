@@ -1,0 +1,125 @@
+.registration
+    display: flex
+    padding-top: 64px
+    padding-bottom: 96px
+
+    &_form
+        display: flex
+        flex-direction: column
+        width: 360px
+        margin-right: 128px
+
+    &_label
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #222222
+        margin-bottom: 20px
+
+    &_input
+        border: 1px solid #A4A4A4
+        padding: 13px 17px
+
+    &_input::-webkit-input-placeholder
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
+
+    &_input::-moz-placeholder
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
+
+    &_input:-moz-placeholder
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
+
+    &_input:-ms-input-placeholder
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
+
+    &_check
+        font-weight: 300
+        font-size: 11px
+        line-height: 13px
+        color: #000000
+        display: flex
+        align-items: center
+        margin-top: 32px
+        margin-bottom: 33px
+
+    &_text
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
+        margin-top: 15px
+        margin-bottom: 39px
+
+    &_button
+        font-size: 14px
+        line-height: 17px
+        color: #FFFFFF
+        border: none
+        background-color: $colorSelect
+        padding: 16px 29px
+        width: 169px
+        transition: background-color .3s
+
+        &:hover
+            background-color: $colorSelect - #111
+
+        & img
+            margin-left: 20px
+
+.input_mb
+    margin-bottom: 20px
+
+.check_ml
+    margin-left: 10px
+
+.check_mr
+    margin-right: 20px
+
+.loyalty
+
+    &_heading
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        color: #000000
+        margin-bottom: 22px
+
+    &_text
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        color: #000000
+        width: 652px
+        margin-bottom: 21px
+
+    &_point
+        font-size: 24px
+        line-height: 29px
+        color: #000000
+        font-weight: 300
+        margin-bottom: 16px
+        margin-left: 43px
+        position: relative
+
+        &::before
+            content: ''
+            background-image: url("../img/tick.svg")
+            background-repeat: no-repeat
+            width: 20px
+            height: 16px
+            display: block
+            position: absolute
+            top: 6px
+            left: -43px
