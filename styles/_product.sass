@@ -71,6 +71,13 @@
     color: $colorSelect
     margin-bottom: 65px
 
+.add_border
+    background-color: #EAEAEA
+    width: 641px
+    height: 1px
+    display: inline-block
+    margin-bottom: 65px
+
 .product_parameters
     margin-bottom: 49px
 
@@ -119,3 +126,46 @@
 .product_goods
     padding-top: 0
     padding-bottom: 128px
+
+@media (max-width: 1025px)
+    .item:last-child
+        display: none
+
+@media (max-width: 769px)
+    .product
+        padding-top: 30px
+        padding-bottom: 30px
+
+        &_description
+            margin-top: 0
+
+    .item-mr-mini
+        margin-right: 16px
+
+@media (max-width: 426px)
+    .product
+        height: 624px
+        padding-top: 85px
+        padding-bottom: 85px
+        background-image: url("../img/product_back.png")
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 95%
+
+        & img
+            display: none
+
+        &_description
+            margin-bottom: 64px
+
+        &_text
+            width: 326px
+
+    .add_border
+        width: 175px
+
+    .product_goods
+        padding-bottom: 64px
+
+    .item-mr-mini
+        margin-right: 0

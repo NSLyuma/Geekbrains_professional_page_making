@@ -30,12 +30,74 @@ details summary::-webkit-details-marker
     align-items: center
     height: 75px
     justify-content: space-between
+    position: relative
 
     &_search
         margin-left: 41px
 
+    &_right
+        display: flex
+        align-items: center
+
     &_account
         margin: 0 34px
+
+#switcher
+    position: absolute
+    visibility: hidden
+
+    &:checked ~ .drop
+        opacity: 1
+
+.drop
+    background-color: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 37px 32px
+    position: absolute
+    top: 75px
+    right: 0
+    opacity: 0
+    width: $widthMenu
+    height: 765px
+    transition: all .3s
+    z-index: 1
+
+    &__img
+        position: absolute
+        top: 16px
+        right: 16px
+        cursor: pointer
+
+    &__name
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        font-weight: 600
+        margin-bottom: 24px
+
+    &__box
+
+        &:not(:last-child)
+            margin-bottom: 20px
+
+        & ul li:not(:last-child)
+            margin-bottom: 11px
+
+    &__heading
+        font-size: 14px
+        line-height: 17px
+        color: $colorSelect
+        margin-bottom: 12px
+
+    &_link
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        margin-left: 22px
+        transition: color .2s
+
+        &:hover
+            color: $colorSelect
 
 .top
     display: flex
@@ -348,6 +410,10 @@ details summary::-webkit-details-marker
         & path
             transition: fill .3s
 
+@media (max-width: 1441px)
+    .drop
+        height: auto
+
 @media (max-width: 1025px)
     .header, .offer, .footer_top, .footer_bottom
         padding-left: 32px
@@ -368,7 +434,7 @@ details summary::-webkit-details-marker
     .item-mr
         margin-right: 30px
 
-@media (max-width: 768px)
+@media (max-width: 769px)
     .offer
         padding-top: 20px
 
@@ -434,6 +500,10 @@ details summary::-webkit-details-marker
     .header
         padding-right: 16px
         padding-left: 16px
+
+    .drop
+        width: 100%
+
     .hidden
         display: none
 

@@ -26,53 +26,57 @@
         </div>
 
         <div class="header_right">
-            <a href="catalog.html">
+            <input type="checkbox" name="switcher" id="switcher">
+            <label for="switcher">
                 <img src="img/menu.svg" alt="menu">
-            </a>
-            <!-- <details class="menu_open" open>
-                <summary class="menu_heading">
-                    MENU
-                    <img class="menu_close" src="img/close.svg" alt="">
-                </summary>
-                <ul>
-                    <li>
-                        <a href="#">MAN</a>
-                        <ul>
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">Bags</a></li>
-                            <li><a href="#">Denim</a></li>
-                            <li><a href="#">T-Shirts</a></li>
-                        </ul>
-                    </li>
+            </label>
 
-                    <li>
-                        <a href="#">WOMAN</a>
-                        <ul>
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">Jackets & Coats</a></li>
-                            <li><a href="#">Polos</a></li>
-                            <li><a href="#">T-Shirts</a></li>
-                            <li><a href="#">Shirts</a></li>
-                        </ul>
-                    </li>
+            <nav class="drop">
+                <img class="drop__img" src="img/close.svg" alt="close">
+                <h3 class="drop__name">MENU</h3>
 
-                    <li>
-                        <a href="#">KIDS</a>
-                        <ul>
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">Jackets & Coats</a></li>
-                            <li><a href="#">Polos</a></li>
-                            <li><a href="#">T-Shirts</a></li>
-                            <li><a href="#">Shirts</a></li>
-                            <li><a href="#">Bags</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </details> -->
+                <div class="drop__box">
+                    <a href="catalog.html">
+                        <h4 class="drop__heading">MAN</h4>
+                    </a>
+                    <ul>
+                        <li><a class="drop_link" href="product.html">Accessories</a></li>
+                        <li><a class="drop_link" href="product.html">Bags</a></li>
+                        <li><a class="drop_link" href="product.html">Denim</a></li>
+                        <li><a class="drop_link" href="product.html">T-Shirts</a></li>
+                    </ul>
+                </div>
 
-            <a href="#"><img class="header_account" src="img/account.svg" alt="menu"></a>
+                <div class="drop__box">
+                    <a href="catalog.html">
+                        <h4 class="drop__heading">WOMAN</h4>
+                    </a>
+                    <ul>
+                        <li><a class="drop_link" href="product.html">Accessories</a></li>
+                        <li><a class="drop_link" href="product.html">Jackets & Coats</a></li>
+                        <li><a class="drop_link" href="product.html">Polos</a></li>
+                        <li><a class="drop_link" href="product.html">T-Shirts</a></li>
+                        <li><a class="drop_link" href="product.html">Shirts</a></li>
+                    </ul>
+                </div>
 
-            <a href="cart.html"><img src="img/cart.svg" alt="menu"></a>
+                <div class="drop__box">
+                    <a href="catalog.html">
+                        <h4 class="drop__heading">KIDS</h4>
+                    </a>
+                    <ul>
+                        <li><a class="drop_link" href="product.html">Accessories</a></li>
+                        <li><a class="drop_link" href="product.html">Jackets & Coats</a></li>
+                        <li><a class="drop_link" href="product.html">Polos</a></li>
+                        <li><a class="drop_link" href="product.html">T-Shirts</a></li>
+                        <li><a class="drop_link" href="product.html">Shirts</a></li>
+                        <li><a class="drop_link" href="product.html">Bags</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <a class="hidden" href="#"><img class="header_account" src="img/account.svg" alt="account"></a>
+            <a class="hidden" href="cart.html"><img src="img/cart.svg" alt="cart"></a>
         </div>
     </header>
 
@@ -87,7 +91,7 @@
     <div class="goods_filter center">
         <div class="filter filter_open">
             <span class="filter_text">
-                FILTER
+                <span class="filter-hidden">FILTER</span>
                 <svg class="filter_img" width="15" height="10" viewBox="0 0 15 10" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path class="filter_img"
@@ -127,7 +131,7 @@
         <div class="filter_choice">
             <div class="choice">
                 <details>
-                    <summary>
+                    <summary class="choice_text">
                         TRENDING NOW
                         <img class="choice_arrow" src="img/filter_arrow.svg" alt="arrow">
                     </summary>
@@ -136,7 +140,7 @@
 
             <div class="choice">
                 <details class="choice_open">
-                    <summary>
+                    <summary class="choice_text">
                         SIZE
                         <img class="choice_arrow" src="img/filter_arrow.svg" alt="arrow">
                     </summary>
@@ -154,7 +158,7 @@
 
             <div class="choice">
                 <details>
-                    <summary>
+                    <summary class="choice_text">
                         PRICE
                         <img class="choice_arrow" src="img/filter_arrow.svg" alt="arrow">
                     </summary>
@@ -165,7 +169,7 @@
 
     <section class="goods center catalog_goods">
         <div class="goods_items">
-            <div class="item item-mb">
+            <div class="item item-mb item-mr-mini">
                 <a href="product.html"><img class="item_img" src="img/goods_item-1.jpg" alt="item"></a>
 
                 <a class="item_add" href="#"><img src="img/item_cart.svg" alt="cart">Add to Cart</a>
@@ -201,7 +205,7 @@
                 </div>
             </div>
 
-            <div class="item item-mb">
+            <div class="item item-mb item-mr-mini item-hidden">
                 <a href="product.html"><img class="item_img" src="img/goods_item-3.jpg" alt="item"></a>
 
                 <a class="item_add" href="#"><img src="img/item_cart.svg" alt="cart">Add to Cart</a>
@@ -219,7 +223,7 @@
                 </div>
             </div>
 
-            <div class="item item-mb">
+            <div class="item item-mb item-mr-mini">
                 <a href="product.html"><img class="item_img" src="img/goods_item-4.jpg" alt="item"></a>
 
                 <a class="item_add" href="#"><img src="img/item_cart.svg" alt="cart">Add to Cart</a>
@@ -255,7 +259,7 @@
                 </div>
             </div>
 
-            <div class="item item-mb">
+            <div class="item item-mb item-mr-mini">
                 <a href="product.html"><img class="item_img" src="img/goods_item-9.jpg" alt="item"></a>
 
                 <a class="item_add" href="#"><img src="img/item_cart.svg" alt="cart">Add to Cart</a>
@@ -273,7 +277,7 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item item-mb-mini">
                 <a href="product.html"><img class="item_img" src="img/goods_item-10.jpg" alt="item"></a>
 
                 <a class="item_add" href="#"><img src="img/item_cart.svg" alt="cart">Add to Cart</a>
@@ -291,7 +295,7 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item item-mr-mini">
                 <a href="product.html"><img class="item_img" src="img/goods_item-11.jpg" alt="item"></a>
 
                 <a class="item_add" href="#"><img src="img/item_cart.svg" alt="cart">Add to Cart</a>
